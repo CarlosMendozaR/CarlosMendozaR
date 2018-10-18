@@ -48,10 +48,10 @@
             // lbTitulo
             // 
             this.lbTitulo.AutoSize = true;
-            this.lbTitulo.Font = new System.Drawing.Font("Monospac821 BT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitulo.Location = new System.Drawing.Point(13, 13);
             this.lbTitulo.Name = "lbTitulo";
-            this.lbTitulo.Size = new System.Drawing.Size(321, 29);
+            this.lbTitulo.Size = new System.Drawing.Size(283, 29);
             this.lbTitulo.TabIndex = 1;
             this.lbTitulo.Text = "Calificador de Alumnos";
             // 
@@ -141,7 +141,7 @@
             // 
             // btnAñadir
             // 
-            this.btnAñadir.Location = new System.Drawing.Point(75, 195);
+            this.btnAñadir.Location = new System.Drawing.Point(75, 205);
             this.btnAñadir.Name = "btnAñadir";
             this.btnAñadir.Size = new System.Drawing.Size(140, 56);
             this.btnAñadir.TabIndex = 7;
