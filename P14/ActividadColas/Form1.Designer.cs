@@ -35,12 +35,11 @@
             this.txtbNombre = new System.Windows.Forms.TextBox();
             this.txtbAciertos = new System.Windows.Forms.TextBox();
             this.gpbCalificar = new System.Windows.Forms.GroupBox();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.cmbLista = new System.Windows.Forms.ComboBox();
             this.btnCalificar = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnAñadir = new System.Windows.Forms.Button();
+            this.txtbAlumnoCalificar = new System.Windows.Forms.TextBox();
             this.gpbCalificar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -89,51 +88,34 @@
             // 
             // gpbCalificar
             // 
-            this.gpbCalificar.Controls.Add(this.btnEliminar);
+            this.gpbCalificar.Controls.Add(this.txtbAlumnoCalificar);
             this.gpbCalificar.Controls.Add(this.label3);
-            this.gpbCalificar.Controls.Add(this.cmbLista);
             this.gpbCalificar.Controls.Add(this.btnCalificar);
             this.gpbCalificar.Location = new System.Drawing.Point(298, 63);
             this.gpbCalificar.Name = "gpbCalificar";
             this.gpbCalificar.Size = new System.Drawing.Size(259, 198);
             this.gpbCalificar.TabIndex = 6;
             this.gpbCalificar.TabStop = false;
-            this.gpbCalificar.Text = "[Añadir un alumno]";
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Location = new System.Drawing.Point(142, 120);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(80, 36);
-            this.btnEliminar.TabIndex = 3;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.gpbCalificar.Text = "Califica al alumno";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(34, 44);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 17);
+            this.label3.Size = new System.Drawing.Size(119, 17);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Seleccione a quién calificar";
-            // 
-            // cmbLista
-            // 
-            this.cmbLista.FormattingEnabled = true;
-            this.cmbLista.Location = new System.Drawing.Point(34, 67);
-            this.cmbLista.Name = "cmbLista";
-            this.cmbLista.Size = new System.Drawing.Size(188, 24);
-            this.cmbLista.TabIndex = 1;
+            this.label3.Text = "Alumno a calificar";
             // 
             // btnCalificar
             // 
-            this.btnCalificar.Location = new System.Drawing.Point(33, 121);
+            this.btnCalificar.Location = new System.Drawing.Point(57, 121);
             this.btnCalificar.Name = "btnCalificar";
-            this.btnCalificar.Size = new System.Drawing.Size(85, 35);
+            this.btnCalificar.Size = new System.Drawing.Size(138, 37);
             this.btnCalificar.TabIndex = 0;
             this.btnCalificar.Text = "Calificar";
             this.btnCalificar.UseVisualStyleBackColor = true;
+            this.btnCalificar.Click += new System.EventHandler(this.btnCalificar_Click);
             // 
             // errorProvider1
             // 
@@ -145,9 +127,17 @@
             this.btnAñadir.Name = "btnAñadir";
             this.btnAñadir.Size = new System.Drawing.Size(140, 56);
             this.btnAñadir.TabIndex = 7;
-            this.btnAñadir.Text = "Añadir a Lista";
+            this.btnAñadir.Text = "Añadir a la cola";
             this.btnAñadir.UseVisualStyleBackColor = true;
             this.btnAñadir.Click += new System.EventHandler(this.btnAñadir_Click);
+            // 
+            // txtbAlumnoCalificar
+            // 
+            this.txtbAlumnoCalificar.Enabled = false;
+            this.txtbAlumnoCalificar.Location = new System.Drawing.Point(37, 76);
+            this.txtbAlumnoCalificar.Name = "txtbAlumnoCalificar";
+            this.txtbAlumnoCalificar.Size = new System.Drawing.Size(194, 22);
+            this.txtbAlumnoCalificar.TabIndex = 4;
             // 
             // Form1
             // 
@@ -178,12 +168,11 @@
         private System.Windows.Forms.TextBox txtbNombre;
         private System.Windows.Forms.TextBox txtbAciertos;
         private System.Windows.Forms.GroupBox gpbCalificar;
-        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cmbLista;
         private System.Windows.Forms.Button btnCalificar;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button btnAñadir;
+        private System.Windows.Forms.TextBox txtbAlumnoCalificar;
     }
 }
 
